@@ -6,12 +6,55 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>MY ELECTRON</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
-    integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
 </head>
 
 <body>
-  <h1>Hello, World!</h1>
+  <div class="container">
+    <h1>Bcrypt Gen</h1>
+    <div>
+      <form>
+        <!-- <div class="form-group row">
+          <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
+          <div class="col-sm-10">
+            <input type="text" readonly class="form-control-plaintext" id="staticEmail" value="email@example.com">
+          </div>
+        </div> -->
+        <div class="form-group row">
+          <label for="roundes" class="col-sm-2 col-form-label">roundes</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="roundes" placeholder="10">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="version" class="col-sm-2 col-form-label">version</label>
+          <div class="col-sm-10">
+            <select class="form-control" id="version">
+              <option value="a">2a</option>
+              <option value="x">2x</option>
+              <option value="y">2y</option>
+              <option value="b" selected>2b (default)</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="password" class="col-sm-2 col-form-label">Password</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="password" placeholder="Passw0rd">
+          </div>
+        </div>
+        <div class="form-group row">
+          <div class="offset-md-2 col-sm-10">
+            <input type="button" class="btn btn-primary" id="exec" value="生成" />
+          </div>
+        </div>
+      </form>
+      <div class="card bg-light">
+        <div id="result" class="card-body"></div>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" src="./gen-bcrypt.js"></script>
 </body>
 
 </html>

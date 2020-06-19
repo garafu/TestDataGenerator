@@ -1,0 +1,8 @@
+{
+  "name": "testdatagenerator",
+  "version": "0.0.1",
+  "description": "Random test data generator.",
+  "main": "./main.js",
+  "author": "Akinari Tsugo",
+  "license": "MIT"
+}

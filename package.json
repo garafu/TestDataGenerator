@@ -2,14 +2,32 @@
   "name": "testdatagenerator",
   "version": "0.0.1",
   "description": "Random test data generator.",
-  "main": "./src/main.js",
+  "main": "./src",
   "scripts": {
-    "start": "electron ./src/main.js"
+    "start": "electron ./src",
+    "build": "electron-builder"
+  },
+  "build": {
+    "appId": "local.test.app1",
+    "directories": {
+      "app": "./src"
+    },
+    "win": {
+      "target": {
+        "target": "zip",
+        "arch": [
+          "x64"
+        ]
+      }
+    }
   },
   "author": "Akinari Tsugo",
   "license": "MIT",
-  "dependencies": {},
+  "dependencies": {
+    "bcrypt": "^5.0.0"
+  },
   "devDependencies": {
-    "electron": "^9.0.4"
+    "electron": "^9.0.4",
+    "electron-builder": "^22.7.0"
   }
 }
